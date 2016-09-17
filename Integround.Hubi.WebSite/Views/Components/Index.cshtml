@@ -1,0 +1,52 @@
+﻿@{
+    ViewBag.Title = "Integround Components";
+}
+
+<div class="jumbotron">
+    <h1>Integround Components</h1>
+    <p>
+        Collection of open source integration components to help you build custom integration solutions easily.
+    </p>
+    <h3>Quick links:</h3>
+    <ul>
+        <li>Documentation: @Html.ActionLink("Components", "components", "documentation")</li>
+        <li>License: @Html.ActionLink("MIT", "license", "home")</li>
+        <li>Download: <a href="https://www.nuget.org/packages?q=integround" target="_blank">Nuget</a></li>
+        <li>Source: <a href="https://github.com/Integround/Integround.Components" target="_blank">Github</a></li>
+    </ul>
+</div>
+
+<hr />
+
+<p>
+    <b>Integround Components</b> can be used in any .NET application to make it easier to execute many integration-related tasks without writing all code by yourself.
+    They are completely free, released under MIT license and are also available as nuget packages.
+</p>
+<p>
+    Also check out the possibility to host your processes in Microsoft Azure cloud using the @Html.ActionLink("Integround.Hubi", "index", "home") platform.
+    It makes hosting your custom integration solutions super easy.
+</p>
+
+<hr />
+
+<p>
+    Here's the list of released Integround Components. Many more to come.
+    <ul>
+        <li>
+            <b>Integround.Components.Core</b> : Contains the core classes for processes and basic components like xslt & flat file conversions.
+        </li>
+        <li>
+            <b>Integround.Components.Azure.ServiceBus</b> : Contains components for communicating with Azure Service Bus.
+        </li>
+        <li>
+            <b>Integround.Components.Files.Ftp</b> : Contains client components for communicating with FTP / SFTP servers. (*
+        </li>
+        <li>
+            <b>Integround.Components.Http</b> : Contains components for publishing HTTP interfaces and consuming REST services.
+        </li>
+        <li>
+            <b>Integround.Components.Log.x</b> : Contain components for logging messages to various destinations.
+        </li>
+    </ul>
+    <small>*) Note: these components depend on Rebex File Transfer Pack libraries which require third-party licensing.</small>
+</p>
