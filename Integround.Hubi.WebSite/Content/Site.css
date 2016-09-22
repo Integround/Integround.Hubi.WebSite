@@ -58,11 +58,20 @@ ul.nav-toc {
         font-weight: bold;
     }
 
-ul.nav-toc-sub a {
-    padding-left: 25px;
-    padding-top: 1px;
-    padding-bottom: 1px;
+    ul.nav-toc li.active ul.nav-toc-sub {
+        display: block;
+    }
+
+
+ul.nav-toc-sub {
+    display: none;
 }
+
+    ul.nav-toc-sub a {
+        padding-left: 25px;
+        padding-top: 1px;
+        padding-bottom: 1px;
+    }
 
 .doc-container h2 {
     padding-top: 20px;
