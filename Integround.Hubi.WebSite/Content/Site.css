@@ -22,3 +22,48 @@ select,
 textarea {
     max-width: 280px;
 }
+
+thead {
+    font-weight: bold;
+}
+
+.affix {
+    top: 90px;
+}
+
+a.anchor {
+    display: block;
+    position: relative;
+    top: -90px;
+    visibility: hidden;
+}
+
+ul.nav-toc {
+    text-transform: none;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+    ul.nav-toc a {
+        color: #7dad38;
+        padding-top: 4px;
+        padding-bottom: 4px;
+    }
+
+    ul.nav-toc li.active > a {
+        color: #547425;
+        border-left-color: #3e3f3a;
+        border-left-style: solid;
+        border-left-width: thick;
+        font-weight: bold;
+    }
+
+ul.nav-toc-sub a {
+    padding-left: 25px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+.doc-container h2 {
+    padding-top: 20px;
+}
