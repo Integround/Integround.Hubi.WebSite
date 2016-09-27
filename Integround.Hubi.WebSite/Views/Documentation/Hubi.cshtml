@@ -3,10 +3,17 @@
 }
 
 <div class="jumbotron">
-    <h1>Hubi documentation</h1>
+    <h1>Integround.Hubi</h1>
     <p>
         Documentation and developer tutorials for Integround Hubi.
     </p>
-    <p>Coming soon...</p>
 </div>
-
+<hr />
+@if (string.IsNullOrWhiteSpace(ViewBag.Content))
+{
+    <h3>Oops... Looks like You are looking for something that does not exist.</h3>
+}
+else
+{
+    @Html.Raw(ViewBag.Content)
+}
