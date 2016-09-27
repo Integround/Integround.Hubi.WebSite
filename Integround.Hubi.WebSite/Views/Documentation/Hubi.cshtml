@@ -17,3 +17,11 @@ else
 {
     @Html.Raw(ViewBag.Content)
 }
+
+@section Scripts
+{
+    @Scripts.Render("~/bundles/highlight")
+    <script type="text/javascript">
+        hljs.initHighlightingOnLoad();
+    </script>
+}

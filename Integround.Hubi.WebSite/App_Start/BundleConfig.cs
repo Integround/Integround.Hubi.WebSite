@@ -14,6 +14,9 @@ namespace Integround.Hubi.WebSite
             bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
                         "~/Scripts/jquery.validate*"));
 
+            bundles.Add(new ScriptBundle("~/bundles/highlight").Include(
+                        "~/Scripts/Highlight/highlight.pack.js"));
+
             // Use the development version of Modernizr to develop with and learn from. Then, when you're
             // ready for production, use the build tool at http://modernizr.com to pick only the tests you need.
             bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
@@ -25,6 +28,7 @@ namespace Integround.Hubi.WebSite
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
+                      "~/Content/Highlight/vs.css",
                       "~/Content/site.css"));
         }
     }
